@@ -1,4 +1,4 @@
-import { Schema, model, connect, Document } from 'mongoose'
+import { Schema, model, Document } from 'mongoose'
 
 
 interface CarDTO extends Document {
@@ -32,5 +32,4 @@ const Car = model<CarDTO>('Car', CarSchema)
 export {
     Car,
     CarDTO,
-    connect,
 }
